@@ -21,29 +21,30 @@ public class ReadDB extends Restaurants {
             }
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                String nom = rs.getString("RES_NOM");
-                String adreca = rs.getString("RES_ADRECA");
-                String web = rs.getString("RES_WEB");
-                String tel = rs.getString("RES_TELEFON");
-                String tipus = rs.getString("TRS_DESCRIPCIO");
-                String foto = rs.getString("RES_URL_IMG");
-                String codi = rs.getString("RES_CODI");
-                String puntuacio = rs.getString("RES_MITJANA");
+                String name = rs.getString("RES_NOM");
+                String address = rs.getString("RES_ADRECA");
+                String url = rs.getString("RES_WEB");
+                String phone = rs.getString("RES_TELEFON");
+                String type = rs.getString("TRS_DESCRIPCIO");
+                String imgUrl = rs.getString("RES_URL_IMG");
+                String code = rs.getString("RES_CODI");
+                String score = rs.getString("RES_MITJANA");
 
                 Restaurants rst = new Restaurants();
-                rst.setNom(nom);
-                rst.setAdreca(adreca);
-                rst.setWeb(web);
-                rst.setTel(tel);
-                rst.setTipus(tipus);
-                rst.setFoto(foto);
-                rst.setCodi(codi);
-                rst.setPuntuacio(puntuacio);
+                rst.setName(name);
+                rst.setAddress(address);
+                rst.setUrl(url);
+                rst.setPhone(phone);
+                rst.setType(type);
+                rst.setImgUrl(imgUrl);
+                rst.setCode(code);
+                rst.setScore(score);
 
                 arrl.add(rst);
             }
             con.close();
 
+            //Excepcions. Mostra que ha passat i on.
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

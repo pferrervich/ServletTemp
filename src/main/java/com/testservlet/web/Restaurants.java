@@ -2,76 +2,76 @@ package com.testservlet.web;
 
 public class Restaurants {
 
-    private String nom;
-    private String adreca;
-    private String web;
-    private String tel;
-    private String tipus;
-    private String foto;
-    private String codi;
-    private String puntuacio;
+    private String name;
+    private String address;
+    private String url;
+    private String phone;
+    private String type;
+    private String imgUrl;
+    private String code;
+    private String score;
 
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getAdreca() {
-        return adreca;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdreca(String adreca) {
-        this.adreca = adreca;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getWeb() {
-        return web;
+    public String getUrl() {
+        return url;
     }
 
-    public void setWeb(String web) {
-        this.web = web;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
-    public String getTel() {
-        return tel;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTel(String tel) {
-        this.tel = tel;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getTipus() {
-        return tipus;
+    public String getType() {
+        return type;
     }
 
-    public void setTipus(String tipus) {
-        this.tipus = tipus;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public String getFoto() {
-        return foto;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public void setFoto(String foto) {
-        this.foto = foto;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
-    public String getCodi() {
-        return codi;
+    public String getCode() {
+        return code;
     }
 
-    public void setCodi(String codi) {
-        this.codi = codi;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getPuntuacio() {
-        return puntuacio;
+    public String getScore() {
+        return score;
     }
 
-    public void setPuntuacio(String puntuacio) {
-        this.puntuacio = puntuacio;
+    public void setScore(String score) {
+        this.score = score;
     }
 }

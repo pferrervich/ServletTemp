@@ -1,9 +1,9 @@
-<%@ page import="com.testservlet.web.ReadDB" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="com.testservlet.web.Restaurants" %>
 <!doctype html>
 <head>
+    <!-- Bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,8 +17,6 @@
 </div>
 
 <%
-ReadDB readDB = new ReadDB();
-
 ArrayList<Restaurants> arrl = (ArrayList<Restaurants>) request.getAttribute("search");
 
 Iterator iter = arrl.iterator();
@@ -29,12 +27,13 @@ Iterator iter = arrl.iterator();
         out.println("<div class=\"container\">" +
                 "<div class=\"row\" >" +
                     "<div class=\"col-sm-4\">"+
-                        "<h3>" + rst.getNom() + "</h3>" +
-                        "<p>Web: " + rst.getWeb() + "</p>"+
-                        "<p>Tipus: " + rst.getTipus() + "</p>" +
-                        "<p>Direccio: " + rst.getAdreca() + "</p>" +
-                        "<p>Puntuacio: " + rst.getPuntuacio() + "</p>" +
-                        "<p>Telefon: " + rst.getTel() + "</p>" +
+                        "<h3>" + rst.getName() + "</h3>" +
+                        "<p>Web: <a href=\"" + rst.getUrl() + "\">" + rst.getUrl() + "</a>" + "</p>"+
+                        "<p>Telefon: " + rst.getPhone() + "</p>" +
+                        "<p>Direccio: " + rst.getAddress() + "</p>" +
+                        "<p>Tipus: " + rst.getType() + "</p>" +
+                        "<p>Puntuacio: " + rst.getScore() + "</p>" +
+                        "<hr>" +
                     "</div>" +
                 "</div>" +
                 "</div>");

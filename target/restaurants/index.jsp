@@ -22,9 +22,12 @@
         <div class="form-group">
             <input type="text" class="form-control" id="search" placeholder="Search Restaurants" name="search">
             <br>
-            <button type="submit" form="search" value="submit">Search</button>
+            <center>
+                <input type="submit" value="Search">
+            </center>
         </div>
     </form>
+
 </div>
 </body>
 </html>
