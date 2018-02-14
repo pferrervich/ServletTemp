@@ -11,5 +11,4 @@ The tomcat server will deploy at http://localhost:8080/restaurants/
   
   
 ![enter image description here](https://i.imgur.com/jKWBPyr.png)
-![enter image description here](https://i.imgur.com/kagdPVS.png)  
 
