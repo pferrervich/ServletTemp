@@ -1,4 +1,4 @@
-#Servlet Template
+# Servlet Template
 ### How to pack and deploy on the command line with maven
 
 Download the release, and inside the directory run:
